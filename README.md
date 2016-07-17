@@ -1,4 +1,5 @@
-# cliente_graylog2
+# cliente_graylog2 
+[![Build status](https://travis-ci.org/jandradap/cliente_graylog2.svg?branch=master)]
 
 [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/jandradap/cliente_graylog2/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jandradap/cliente_graylog2.svg)](https://github.com/jandradap/cliente_graylog2/stargazers)
