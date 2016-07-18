@@ -33,7 +33,7 @@ RUN echo 'root:root' | chpasswd
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 #Configuracion RSYSLOG
-RUN echo "$template GRAYLOGRFC5424,\"%protocol-version% %timestamp:::date-rfc3339% %HOSTNAME% %app-name% %procid% %msg%\n\"" >> /etc/rsyslog.conf
+RUN echo "\$template GRAYLOGRFC5424,\"%protocol-version% %timestamp:::date-rfc3339% %HOSTNAME% %app-name% %procid% %msg%\n\"" >> /etc/rsyslog.conf
 RUN echo "*.* @172.17.0.5:2514;GRAYLOGRFC5424" >> /etc/rsyslog.conf
 
 #Copio la configuracion del supervisord
