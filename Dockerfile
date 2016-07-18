@@ -48,9 +48,9 @@ CMD ["/usr/bin/supervisord"]
 
 ########### INFORMACION ###########
 #mysql root:root
-#docker build -t monino/pruebas:cliente_graylog_debian --no-cache .
-#docker run --name=Cliente_Graylog -p 22 -p 80 -d monino/pruebas:cliente_graylog_debian
+#docker build -t jorgeandrada/cliente_graylog2 --no-cache .
+#docker run --name=Cliente_Graylog -p 22 -p 80 -d jorgeandrada/cliente_graylog2
 #docker exec -i  Cliente_Graylog /bin/bash
 #docker login
-#docker push monino/pruebas:cliente_graylog_debian
+#docker push jorgeandrada/cliente_graylog2
 
