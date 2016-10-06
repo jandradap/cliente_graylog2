@@ -1,9 +1,0 @@
-sudo: required
-
-services:
-  - docker
-
-before_install:
-  - docker build -t jorgeandrada/cliente_graylog2 --no-cache .
-  - docker run --name=Cliente_Graylog -p 22 -p 80 -d jorgeandrada/cliente_graylog2
-  - docker ps -a
